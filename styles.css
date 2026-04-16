@@ -64,9 +64,14 @@ a:hover {
     opacity: 0.75;
 }
 
+.home, .about, .notFound {
+    justify-content: center;
+}
+
 .panel {
     width: min(100%, 700px);
     margin: 0 auto;
+    margin-top: 2rem;
     padding: 1rem;
     background-color: var(--color-surface);
     border-radius: 12px;
@@ -183,10 +188,6 @@ button:hover {
 
 /* aspecto tablet */
 @media (min-width: 768px) {
-    .chat {
-        padding: 1.5rem;
-    }
-    
     aside {
         display: none;
     }
@@ -197,7 +198,6 @@ button:hover {
     .chat {
         grid-template-columns: 2fr 1fr;
         align-items: start;
-        padding: 2rem;
     }
 
     .chat aside {
